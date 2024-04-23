@@ -1,7 +1,16 @@
 import random
 
 vidas = 5
-numero_aleatorio = random.randint(0,100)
+dificuldade = int(input("""selecione a dificuldade:
+1. 1 a 10
+2. 1 a 50
+3. 1 a 100"""))
+if dificuldade == 1:    
+    numero_aleatorio = random.randint(1,10)
+if dificuldade == 2:    
+    numero_aleatorio = random.randint(1,50)
+if dificuldade == 3:    
+    numero_aleatorio = random.randint(1,100)
 print(f"voce tem {vidas} vidas")
 while True:
     chute = int(input("chute um numero: "))
