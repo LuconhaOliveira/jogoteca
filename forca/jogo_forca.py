@@ -1,4 +1,4 @@
-from forca.funcoes_forca import *
+from .funcoes_forca import *
 def jogo_forca():
     #lista para ficar os underlines e as letras colocadas
     letras = []
