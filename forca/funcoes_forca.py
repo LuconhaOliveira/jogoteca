@@ -5,32 +5,32 @@ def escolha_palavra() -> list:
     tema = int(input("Qual tema você deseja?(1.Animais, 2.Frutas, 3.Paises, 4.Pokemon, 5.Steven Universe ou 6.Geral)"))
     #selecionando uma palavra aleatoria da lista que el selecionou
     if tema == 1:
-        lista = open("palavras_animais.txt","r")
+        lista = open("forca/palavras_animais.txt","r")
         lista_total = lista.readlines()
         palavra = random.choice(lista_total)
         palavra = palavra.strip()
     if tema == 2:
-        lista = open("palavras_frutas.txt","r")
+        lista = open("forca/palavras_frutas.txt","r")
         lista_total = lista.readlines()
         palavra = random.choice(lista_total)
         palavra = palavra.strip()
     if tema == 3:
-        lista = open("palavras_paises.txt","r")
+        lista = open("forca/palavras_paises.txt","r")
         lista_total = lista.readlines()
         palavra = random.choice(lista_total)
         palavra = palavra.strip()
     if tema == 4:
-        lista = open("palavras_pk.txt","r")
+        lista = open("forca/palavras_pk.txt","r")
         lista_total = lista.readlines()
         palavra = random.choice(lista_total)
         palavra = palavra.strip()
     if tema == 5:
-        lista = open("palavras_su.txt","r")
+        lista = open("forca/palavras_su.txt","r")
         lista_total = lista.readlines()
         palavra = random.choice(lista_total)
         palavra = palavra.strip()
     if tema == 6:
-        lista = open("palavras.txt","r")
+        lista = open("forca/palavras.txt","r")
         lista_total = lista.readlines()
         palavra = random.choice(lista_total)
         palavra = palavra.strip()

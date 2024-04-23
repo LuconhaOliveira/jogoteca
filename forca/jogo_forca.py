@@ -53,5 +53,6 @@ def jogo_forca():
     #fim do jogo e qual era a palavra
     print("fim de jogo!!!")
     print(f"a palavra era {palavra}")
+
 if "__main__"==__name__:
     jogo_forca()
