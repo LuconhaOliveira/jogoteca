@@ -1,4 +1,8 @@
 import os
+from adivinhacao.jogo_adivinhacao import*
+from forca.jogo_forca import*
+from tabuada.jogo_tabuada import*
+from velha.Jogo_da_Velha import*
 
 os.system("cls")
 print("""-----------------
@@ -15,10 +19,20 @@ while True:
     elif idade > 120:
         print("não minta idade")
     else:
-        print("""Selecione o jogo:
-> 1. Jogo da forca
-> 2. Jogo da velha
-> 3. Jogo da adivinhação
-> 4. Jogo da tabuada
+        print("""temos os jogos:
+> 1. Jogo da adivinhação
+> 2. Jogo da forca
+> 3. Jogo da tabuada
+> 4. Jogo da velha
 """)
         break
+escolha = int(input("selecione o jogo:"))
+os.system("cls")
+if escolha == 1:
+    jogo_adivinhacao()
+if escolha == 2:
+    jogo_forca()
+if escolha == 3:
+    jogo_tabuada()
+if escolha == 4:
+    jogo_velha()
