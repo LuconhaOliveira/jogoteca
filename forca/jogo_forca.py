@@ -4,11 +4,11 @@ def jogo_forca():
     letras = []
     #quantidade de erros possiveis
     vida = ["", "\ ", "\O", "\O/", """\O/
-    \ """, """\O/
-    \ 
-    /""", """\O/
-    \ 
-    / \ """]
+ \ """, """\O/
+ \ 
+/""", """\O/
+ \ 
+/ \ """]
     cont_vida = 0
     #variavel para conseguir entrar a mesma letra mais de um vez, caso ela se repita na palavra
     passar = 0
