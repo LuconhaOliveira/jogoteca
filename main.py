@@ -3,6 +3,7 @@ from adivinhacao.jogo_adivinhacao import*
 from forca.jogo_forca import*
 from tabuada.jogo_tabuada import*
 from velha.Jogo_da_Velha import*
+from pedra_papel_tesoura.jogo_pedra_papel_tesoura import*
 
 os.system("cls")
 print("""-----------------
@@ -24,6 +25,7 @@ while True:
 > 2. Jogo da forca
 > 3. Jogo da tabuada
 > 4. Jogo da velha
+> 5. Pedra, papel, tesoura
 """)
         break
 escolha = int(input("selecione o jogo:"))
@@ -36,3 +38,5 @@ if escolha == 3:
     jogo_tabuada()
 if escolha == 4:
     jogo_velha()
+if escolha == 5:
+    jogo_ppt()
