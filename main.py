@@ -20,24 +20,29 @@ while True:
     elif idade > 120:
         print("não minta idade")
     else:
-        print("""temos os jogos:
+        break
+while True:
+    print("""
+temos os jogos:
 > 1. Jogo da adivinhação
 > 2. Jogo da forca
 > 3. Jogo da tabuada
 > 4. Jogo da velha
 > 5. Pedra, papel, tesoura
+> 0. Sair
 """)
+    escolha = int(input("selecione o jogo:"))
+    os.system("cls")
+    if escolha == 1:
+        jogo_adivinhacao()
+    if escolha == 2:
+        jogo_forca()
+    if escolha == 3:
+        jogo_tabuada()
+    if escolha == 4:
+        jogo_velha()
+    if escolha == 5:
+        jogo_ppt()
+    if escolha == 0:
         break
-escolha = int(input("selecione o jogo:"))
-os.system("cls")
-if escolha == 1:
-    jogo_adivinhacao()
-if escolha == 2:
-    jogo_forca()
-if escolha == 3:
-    jogo_tabuada()
-if escolha == 4:
-    jogo_velha()
-if escolha == 5:
-    jogo_ppt()
 input()
