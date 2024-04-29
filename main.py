@@ -40,3 +40,4 @@ if escolha == 4:
     jogo_velha()
 if escolha == 5:
     jogo_ppt()
+input()
